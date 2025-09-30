@@ -16,6 +16,6 @@ defaults:
     values:
       layout: default  # Applies to all pages.
 header_pages:
-  - stats/index.md
+  - concepts/index.md
   - biomarkers/index.md
   - recommendations/index.md

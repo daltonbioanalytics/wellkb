@@ -15,3 +15,7 @@ defaults:
       path: ""
     values:
       layout: default  # Applies to all pages.
+header_pages:
+  - stats/index.md
+  - biomarkers/index.md
+  - recommendations/index.md

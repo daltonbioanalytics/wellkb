@@ -1,0 +1,53 @@
+# Site settings
+title: Wellness Multiomics Knowledge Base
+description: Educational resource for wellness biomarkers, statistics, and recommendations
+baseurl: "/wellness-kb"
+url: "https://daltonbioanalytics.github.io"
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections for organizing content
+collections:
+  statistics:
+    output: true
+    permalink: /statistics/:path/
+  biomarkers:
+    output: true
+    permalink: /biomarkers/:path/
+  recommendations:
+    output: true
+    permalink: /recommendations/:path/
+
+# Default layouts for collections
+defaults:
+  - scope:
+      path: ""
+      type: "statistics"
+    values:
+      layout: "article"
+      category: "statistics"
+  - scope:
+      path: ""
+      type: "biomarkers"
+    values:
+      layout: "article"
+      category: "biomarkers"
+  - scope:
+      path: ""
+      type: "recommendations"
+    values:
+      layout: "article"
+      category: "recommendations"
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  auto_ids: true
+  toc_levels: 2..6
